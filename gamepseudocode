@@ -1,0 +1,50 @@
+var tomHealth=100
+var monkeyHealth=100
+var tomApple=0
+var monkeyApple=0
+var difficulty
+
+initialize Tom
+initialize Monkey
+acornFrequency= some multiple of difficulty
+appleFrequency=some multiple of difficulty
+
+while (tomY<height or monkeyY<height)
+{
+spawn apple(math.randX)
+acorn.falling(math.rand for x position also math.rand if acorn will fall depending on difficulty)
+
+tom.move
+tomHitAcor()
+{
+checks whether or not tom is hit and then maybe decreases tom's health
+}
+monkey.move
+monkeyHitAcor()
+{
+checks whether or not monkey is hit, decreases helth if did
+}
+
+if Tom X,Y =apples: check whether or not same place as an apple
+{
+give tom points
+}
+
+if Monkey X,Y =apples
+{
+give tom points
+}
+
+
+}
+
+if Tom y=height
+{
+  tom wins
+}
+
+
+if Monkey y=heihgt
+{
+  monkey wins
+}
