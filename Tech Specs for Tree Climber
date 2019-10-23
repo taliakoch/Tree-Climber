@@ -1,0 +1,54 @@
+Describe each game feature from a technical perspective
+Identify programming difficulties of each feature
+The most difficult function is likely going to be constantly updating the position of the players and connecting that to the controls.
+Also having a moving tree seperate from the player might be tough. This might be part of setting up the environment, although I am unsure.
+The falling nuts I dont think is going to be that hard as all one has to do is randomly drop an object from a position x and a time t.
+The player variable itself should be fairly simple as its just the variables x position, y position, health, and number of apples.
+In setting up the environment one must decide when and where to drop acorns and also where to place apples.
+There needs to be a variable y that decides when one of the players actually reaches the height of the tree.
+Define / pseudo-code core functions each feature will need
+See java file
+Include the performance impact of each feature
+It will be a constant loop running the game so I think it should be. Each feature I believe is O(1) as for the most part it is just comparing values.
+
+Identify dependencies or assumptions
+Does this code need any libraries or rely on pre-written code?
+No this game is relatively simple and therefore does not require any libraries or pre written code.
+Are there design assumptions which are actually entire features?
+No. Everything assumed does not require extra coding.
+
+Prioritize each feature (with reasoning)
+Defining the background or setting. Somehow creating the tree and how the movement nad branches work. This is the basis of the game and helps determine how the rest should be coded.
+Coding Player icon and controls. Once the actual tree and dynamics of the overarching system are defined one must decide how the player icon works in relation to the setting.
+Deciding the way acorns must work. This is in relation to the previous portion as this also must de coded with a specific manner.
+Spawning apples. This is the easiest part as it should just be randomizing positions.
+
+Feasibility analysis
+What are the most difficult items to program regarding technical difficulty?
+I think building the overall game platform and having all the individual components work together will be the hardest part. There are different parts of the code that can be approached In different ways such as how the apps may move or how the obstacles work for the player.
+What are the commitments regarding time needed to program?
+This game is more of a conceptual challenge than coding challenge. Once one thinks of how they wanna specifically code each part it should be straightforward.
+ Identify technical issues with the design
+I think it was not specified clearly enough how each individual component worked and how it cohesively tied together so it's up to the coder for the most part how to do large parts of the code.
+
+Data storage and variables
+Layout and list all variables,
+Health of monkey and health of Tom
+X and Y position of monkey and Tom
+Number of extra points
+Time taken to reach the top
+Label functionality of each variable
+Health determine whether or not Tom and Monkey are still alive and playing
+The X and Y position of monkey and Tom are probably the most important parts as this determines how high up the tree they are and whether they hit an acorn, branch, apple, etc.
+Points are just an extra factor that can affect who wins.
+Time also is a factor that will affect who wins presumably.
+Call out any data structures needed for program operation
+I believe that there needs to be a matrix if the x and y positions of branches so the player must navigate around them. I think there should also be a hash or maybe matrix which has the y as the key and x position as the item to see whether or not at each position the player is hitting something.
+Identify which data is global and which is local
+The global variables are the positions and scores. Health is also global as well as points and time. It seems most of the variables are global.
+
+Functional code relational map
+How do functions relate to one another
+The apple, acorn, and branch randomization or setting along with position of players need to be constantly checked to make sure player doesn't run into branches or hit an apple or acorn.
+Which functions are called for which part of the program
+For the game itself it's constantly calling a set number of programs. Generating acorns, apples and branches, and having the player icon interaction. These all work together in the bulk of the game, There are not more necessary functions.
