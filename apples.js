@@ -1,6 +1,6 @@
-//var image=new Image();
 
-function addApple(x,y,l) {
+
+function addApple(x,y) {
   GAME.apples.push(new Apple(x,y));
 }
 
@@ -35,7 +35,7 @@ function animateApples() {
 }
 
 function RenderApples(context) {
-  //Temporary Rectangle Acorn Sprite
+  //Temporary Rectangle Apple Sprite
   context.fillStyle='red';
   for(var i = 0; i < GAME.apples.length; i++) {
     context.fillRect(GAME.apples[i].x,GAME.apples[i].y, 20, 20);
