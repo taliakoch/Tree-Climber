@@ -1,5 +1,5 @@
 var playerSprite=new Image();
-playerSprite.src="images/player.png";
+playerSprite.src="images/somali_pirate.png";
 
 function InitializePlayers() {
   var canvas = document.getElementById('mainCanvas');
